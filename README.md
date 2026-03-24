@@ -1,12 +1,10 @@
-# Trainee Full-Stack Project
+# Trainee Frontend
 
-This workspace contains:
-- `trainee_frontend`: React + Vite frontend using Axios
+React + Vite frontend for managing items (list, create, update) via backend APIs.
 
-## Folder Structure
+## Project Structure
 
 ```text
-
 trainee_frontend/
   src/
     pages/
@@ -17,40 +15,13 @@ trainee_frontend/
       api.js
     App.jsx
     main.jsx
-  .env.example
-  .gitignore
+    styles.css
   index.html
   package.json
   vite.config.js
 ```
 
-## MySQL Table SQL
-
-```sql
-CREATE DATABASE IF NOT EXISTS trainee_db;
-USE trainee_db;
-
-CREATE TABLE IF NOT EXISTS items (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(255) NOT NULL,
-  description TEXT NOT NULL,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
-
-## Backend Environment Variables
-
-Create `trainee_backend/.env`:
-
-```env
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=trainee_db
-PORT=5000
-```
-
-## Frontend Environment Variables
+## Environment Variables
 
 Optional `trainee_frontend/.env`:
 
@@ -58,22 +29,11 @@ Optional `trainee_frontend/.env`:
 VITE_API_BASE_URL=http://localhost:5000/api
 ```
 
-## Run On Ubuntu
+If not provided, the app uses:
 
-### Backend
+`http://localhost:5000/api`
 
-```bash
-cd trainee_backend
-npm install
-npm start
-```
-
-API endpoints:
-- `GET /api/items`
-- `POST /api/items`
-- `PUT /api/items/:id`
-
-### Frontend
+## Run Frontend
 
 ```bash
 cd trainee_frontend
@@ -81,11 +41,22 @@ npm install
 npm run dev
 ```
 
-The Vite dev server runs at `http://localhost:5173` by default.
+The app runs at `http://localhost:5173` by default.
 
-## Notes For Later Docker/K8s
+## Pages
 
-- Config is externalized through environment variables.
-- Backend and frontend are separate services with independent dependencies.
-- Source is organized in modular layers (route -> controller -> service -> model).
-- `.env` and build artifacts are ignored via `.gitignore`.
+- `GetItems` - View all items
+- `CreateItem` - Add a new item
+- `UpdateItem` - Update an existing item
+
+## Screenshots
+
+Add frontend screenshots here:
+
+- Items List page
+- Create Item page
+- Update Item page
+
+Example path format:
+
+`screenshots/frontend/items-list.png`
