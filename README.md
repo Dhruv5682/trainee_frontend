@@ -51,12 +51,11 @@ The app runs at `http://localhost:5173` by default.
 
 ## Screenshots
 
-Add frontend screenshots here:
+<img width="1806" height="667" alt="image" src="https://github.com/user-attachments/assets/d3d1af4f-a343-446f-bd7c-de857f1724c1" />
 
-- Items List page
-- Create Item page
-- Update Item page
+<img width="1804" height="562" alt="image" src="https://github.com/user-attachments/assets/4d358937-0533-4ac6-abb6-332d040ea080" />
 
-Example path format:
+<img width="1806" height="667" alt="image" src="https://github.com/user-attachments/assets/5b90a1da-3a7a-4863-8bd2-b9c38ac3a00b" />
 
-`screenshots/frontend/items-list.png`
+
+
